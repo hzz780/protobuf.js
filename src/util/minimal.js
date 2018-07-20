@@ -111,7 +111,8 @@ util.isSet = function isSet(obj, prop) {
  * @interface Buffer
  * @extends Uint8Array
  */
-
+// 纯粹为了解决问题做的
+util.BufferTemp = require('buffer').Buffer;
 /**
  * Node's Buffer class if available.
  * @type {Constructor<Buffer>}
@@ -396,7 +397,11 @@ util._configure = function() {
     var Buffer = util.Buffer;
     /* istanbul ignore if */
     if (!Buffer) {
-        util._Buffer_from = util._Buffer_allocUnsafe = null;
+        // util._Buffer_from = util._Buffer_allocUnsafe = null;
+        util._Buffer_from = null;
+        util._Buffer_allocUnsafe = function Buffer_allocUnsafe(size) {
+            return new util.BufferTemp(size);
+        };
         return;
     }
     // because node 4.x buffers are incompatible & immutable
