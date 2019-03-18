@@ -1,5 +1,5 @@
 {
-  "name": "protobufjs",
+  "name": "@aelfqueen/protobufjs",
   "version": "6.8.8",
   "versionScheme": "~",
   "description": "Protocol Buffers for JavaScript (& TypeScript).",
@@ -7,9 +7,11 @@
   "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dcodeIO/protobuf.js.git"
+    "url": "git+https://github.com/hzz780/protobuf.js.git"
   },
-  "bugs": "https://github.com/dcodeIO/protobuf.js/issues",
+  "bugs": {
+    "url": "https://github.com/hzz780/protobuf.js/issues"
+  },
   "homepage": "http://dcode.io/protobuf.js",
   "keywords": [
     "protobuf",
@@ -118,5 +120,10 @@
     "ext/**",
     "google/**",
     "src/**"
-  ]
+  ],
+  "directories": {
+    "example": "examples",
+    "lib": "lib",
+    "test": "tests"
+  }
 }
