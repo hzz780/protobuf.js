@@ -408,7 +408,7 @@ Field.fromDescriptor = function fromDescriptor(descriptor, syntax) {
 		extendee = extendee.length ? extendee : undefined;
 	}
     var field = new Field(
-        descriptor.name.length ? descriptor.name : "field" + descriptor.number,
+        $protobuf.util.camelCase(descriptor.name.length ? descriptor.name : "field" + descriptor.number),
         descriptor.number,
         fieldType,
         fieldRule,
