@@ -14,7 +14,8 @@ util.EventEmitter = require("@protobufjs/eventemitter");
 util.float = require("@protobufjs/float");
 
 // requires modules optionally and hides the call from bundlers
-util.inquire = require("@protobufjs/inquire");
+// util.inquire = require("@protobufjs/inquire");
+util.inquire = require("@aelfqueen/inquire");
 
 // converts to / from utf8 encoded strings
 util.utf8 = require("@protobufjs/utf8");

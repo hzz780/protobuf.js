@@ -1,11 +1,11 @@
 {
-  "name": "@protobufjs/inquire",
+  "name": "@aelfqueen/inquire",
   "description": "Requires a module only if available and hides the require call from bundlers.",
-  "version": "1.1.0",
-  "author": "Daniel Wirtz <dcode+protobufjs@dcode.io>",
+  "version": "1.1.1",
+  "author": "Daniel Wirtz <dcode+protobufjs@dcode.io>, hzz780",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dcodeIO/protobuf.js.git"
+    "url": "https://github.com/hzz780/protobuf.js.git"
   },
   "license": "BSD-3-Clause",
   "main": "index.js",
