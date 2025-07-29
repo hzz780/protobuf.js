@@ -12,7 +12,8 @@ var Type, // cyclic
     Enum;
 
 util.codegen = require("@protobufjs/codegen");
-util.fetch   = require("@protobufjs/fetch");
+// util.fetch   = require("@protobufjs/fetch");
+util.fetch   = require("@aelfqueen/fetch");
 util.path    = require("@protobufjs/path");
 
 /**

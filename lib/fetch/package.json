@@ -1,8 +1,8 @@
 {
-  "name": "@protobufjs/fetch",
+  "name": "@aelfqueen/fetch",
   "description": "Fetches the contents of a file accross node and browsers.",
-  "version": "1.1.1",
-  "author": "Daniel Wirtz <dcode+protobufjs@dcode.io>",
+  "version": "1.1.2",
+  "author": "Daniel Wirtz <dcode+protobufjs@dcode.io>, hzz780",
   "repository": {
     "type": "git",
     "url": "https://github.com/dcodeIO/protobuf.js.git"
